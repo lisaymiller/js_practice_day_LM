@@ -1,15 +1,10 @@
- function sandwichCalculator (slicesOfBread,slicesOfCheese){
+let pizzaToppings = ['meat', 'cheese', 'veggies']
 
- 		if ((slicesOfBread>1) && (slicesOfCheese>=(slicesOfBread/2))){
- 	 	return slicesOfBread/2;
+function pizza (description) {
+	return 'You can get a pizza with ' + pizzaToppings[0] + ', ' + pizzaToppings[1] + ', or ' + pizzaToppings[2];
 
- 	 }	else if ((slicesOfBread > 1) && (slicesOfCheese>0)) {
- 	 	return slicesOfCheese;
+}
 
- 	 } 	else {
- 	 	return 0;
+console.log(pizza());
 
- 	 }
- };
-
- alert('You can make ' + Math.floor(sandwichCalculator(5, 10)) + " sandwiches.");
+// alert('is this thing on?');
